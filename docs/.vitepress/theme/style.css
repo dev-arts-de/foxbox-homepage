@@ -1,0 +1,137 @@
+/* Beispiel für einfaches CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Lexend", sans-serif;
+}
+
+:root {
+    /* Light Mode Farben */
+    --vp-c-brand: #fff; /* Primäre Markenfarbe */
+    --vp-c-brand-primary: rgb(60, 60, 60); /* Hauptfarbe der Marke */
+    --vp-c-brand-hover: rgb(90, 90, 90); /* Hover-Zustand der Hauptfarbe */
+    --vp-c-brand-light: rgb(200, 200, 200); /* Leichtere Version der Hauptfarbe */
+
+    --vp-c-text: rgb(30, 30, 30); /* Primäre Textfarbe */
+    --vp-c-text-light: rgb(100, 100, 100); /* Leichtere Textfarbe */
+    --vp-c-text-muted: rgb(150, 150, 150); /* Gedämpfte Textfarbe */
+    --vp-c-text-link: rgb(80, 80, 120); /* Linkfarbe */
+    --vp-c-text-link-hover: rgb(50, 50, 100); /* Link-Hover-Zustand */
+
+    --vp-c-bg: #ffffff; /* Hintergrundfarbe */
+    --vp-c-bg-secondary: rgb(240, 240, 240); /* Sekundäre Hintergrundfarbe */
+    --vp-c-bg-tertiary: rgb(220, 220, 220); /* Tertiäre Hintergrundfarbe */
+
+    --vp-c-border: rgb(200, 200, 200); /* Standardfarbe für Rahmen */
+    --vp-c-border-light: rgb(230, 230, 230); /* Heller Rahmen */
+    --vp-c-border-dark: rgb(180, 180, 180); /* Dunkler Rahmen */
+
+    --vp-c-code-bg: rgb(245, 245, 245); /* Hintergrund für Codeblöcke */
+    --vp-c-code-text: rgb(50, 50, 50); /* Textfarbe in Codeblöcken */
+    --vp-c-code-border: rgb(200, 200, 200); /* Rahmen um Codeblöcke */
+
+    --vp-c-sidebar-bg: rgb(240, 240, 240); /* Hintergrund der Seitenleiste */
+    --vp-c-sidebar-border: rgb(200, 200, 200); /* Rahmenfarbe der Seitenleiste */
+
+    --vp-c-header-bg: rgb(245, 245, 245); /* Hintergrund des Headers */
+    --vp-c-header-text: rgb(30, 30, 30); /* Textfarbe im Header */
+    --vp-c-header-border: rgb(220, 220, 220); /* Rahmen im Header */
+
+    --vp-c-footer-bg: rgb(240, 240, 240); /* Hintergrund des Footers */
+    --vp-c-footer-text: rgb(100, 100, 100); /* Textfarbe im Footer */
+    --vp-c-footer-link: rgb(80, 80, 120); /* Linkfarbe im Footer */
+    --vp-c-footer-link-hover: rgb(50, 50, 100); /* Hover-Zustand der Links im Footer */
+}
+
+.dark {
+    /* Dark Mode Farben */
+    --vp-c-bg: rgb(36, 36, 36); /* Hintergrundfarbe */
+    --vp-c-brand: rgb(48, 48, 48); /* Primäre Markenfarbe */
+    --vp-c-brand-primary: rgb(64, 64, 64); /* Hauptfarbe der Marke */
+    --vp-c-brand-hover: rgb(90, 90, 90); /* Hover-Zustand der Hauptfarbe */
+    --vp-c-brand-light: rgb(128, 128, 128); /* Leichtere Version der Hauptfarbe */
+
+    --vp-c-text: rgb(230, 230, 230); /* Primäre Textfarbe */
+    --vp-c-text-light: rgb(170, 170, 170); /* Leichtere Textfarbe */
+    --vp-c-text-muted: rgb(130, 130, 130); /* Gedämpfte Textfarbe */
+    --vp-c-text-link: rgba(255, 0, 0, 0.35); /* Linkfarbe */
+    --vp-c-text-link-hover: rgba(225, 61, 90, 0.61); /* Link-Hover-Zustand */
+
+    --vp-c-bg-secondary: rgb(44, 44, 44); /* Sekundäre Hintergrundfarbe */
+    --vp-c-bg-tertiary: rgb(60, 60, 60); /* Tertiäre Hintergrundfarbe */
+
+    --vp-c-border: rgb(80, 80, 80); /* Standardfarbe für Rahmen */
+    --vp-c-border-light: rgb(100, 100, 100); /* Heller Rahmen */
+    --vp-c-border-dark: rgb(60, 60, 60); /* Dunkler Rahmen */
+
+    --vp-c-code-bg: rgb(50, 50, 50); /* Hintergrund für Codeblöcke */
+    --vp-c-code-text: rgb(210, 210, 210); /* Textfarbe in Codeblöcken */
+    --vp-c-code-border: rgb(90, 90, 90); /* Rahmen um Codeblöcke */
+
+    --vp-c-sidebar-bg: rgb(40, 40, 40); /* Hintergrund der Seitenleiste */
+    --vp-c-sidebar-border: rgb(70, 70, 70); /* Rahmenfarbe der Seitenleiste */
+
+    --vp-c-header-bg: rgb(50, 50, 50); /* Hintergrund des Headers */
+    --vp-c-header-text: rgb(230, 230, 230); /* Textfarbe im Header */
+    --vp-c-header-border: rgb(80, 80, 80); /* Rahmen im Header */
+
+    --vp-c-footer-bg: rgb(44, 44, 44); /* Hintergrund des Footers */
+    --vp-c-footer-text: rgb(160, 160, 160); /* Textfarbe im Footer */
+    --vp-c-footer-link: rgb(120, 120, 180); /* Linkfarbe im Footer */
+    --vp-c-footer-link-hover: rgb(100, 100, 150); /* Hover-Zustand der Links im Footer */
+}
+
+.navbar {
+    background-color: #f15a24;
+}
+
+.aside {
+    display: none !important;
+}
+
+h1 {
+    color: #333;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 960px) {
+    .VPDoc:not(.has-sidebar) .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .VPDoc:not(.has-sidebar) .container {
+        max-width: 100% !important;
+    }
+}
+
+.VPDoc.has-aside .content-container {
+    max-width: 100% !important;
+}
+
+@media (min-width: 1440px) {
+    .VPDoc:not(.has-sidebar) .content {
+        max-width: 100% !important;
+    }
+}
+
+@media (min-width: 960px) {
+    .dark .VPNav.no-sidebar[data-v-9397ee4e] {
+        background-color: var(--vp-c-bg-tertiary);
+    }
+}
+
+.VPNavBarMenuLink.active[data-v-094e56d3] {
+    color: var(--vp-c-brand-light);
+}
+
+
+.container[data-v-cf6e7c5e] *:hover {
+    color: var(--vp-c-text-light) !important;
+}

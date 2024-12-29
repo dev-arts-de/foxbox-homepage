@@ -1,0 +1,6 @@
+
+
+<MoreInfoSection />
+<PricingSection />
+<CreatePortfolioSection />
+<FooterComponent />

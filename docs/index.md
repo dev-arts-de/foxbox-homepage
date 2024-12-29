@@ -1,0 +1,6 @@
+
+
+<HeroSection />
+<ContentSection />
+<CreatePortfolioSection />
+<FooterComponent />
